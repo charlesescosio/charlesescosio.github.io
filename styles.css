@@ -1049,3 +1049,87 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .home-container {
+    gap: 80px;
+  }
+
+  .home-left .profile-image {
+    width: 320px;
+    height: 320px;
+  }
+
+  .home-right h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 900px) {
+  #home {
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .home-left .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-right {
+    margin-top: 0;
+  }
+
+  .home-right h1 {
+    font-size: 28px;
+  }
+
+  .home-right .subtitle {
+    font-size: 18px;
+  }
+
+  .home-right .description {
+    font-size: 15px;
+    max-width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    padding: 30px 15px;
+  }
+
+  .home-left .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-right h1 {
+    font-size: 22px;
+  }
+
+  .home-right .subtitle {
+    font-size: 16px;
+  }
+
+  .home-right .description {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
