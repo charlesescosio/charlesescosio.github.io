@@ -6,19 +6,6 @@ html, body {
   color: white;
 }
 
-nav {
-  display: flex;
-  align-items: center;            
-  justify-content: space-between; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 10px;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 1000;
-}
-
 .logo {
   height: 30px; 
 }
