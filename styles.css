@@ -1133,3 +1133,41 @@ footer {
     text-align: center;
   }
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+#home {
+  position: relative;
+  min-height: 100svh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+@supports not (height: 100svh) {
+  #home {
+    min-height: 100vh;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #home {
+    padding-top: 120px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
