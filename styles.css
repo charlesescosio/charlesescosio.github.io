@@ -706,19 +706,6 @@ nav ul li a:hover::after {
   }
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 8px 16px;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  box-sizing: border-box;
-}
 
 nav .logo {
   height: 28px;
@@ -777,19 +764,6 @@ nav ul li a:hover::after {
   transform: rotate(-45deg) translateY(-8px);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 16px;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  box-sizing: border-box;
-}
 
 nav .logo {
   height: 30px;
@@ -1135,23 +1109,32 @@ footer {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  height: 60px; /* defines the real nav height */
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999; /* stays on top of all elements */
+  box-sizing: border-box;
+  backdrop-filter: blur(6px);
 }
+
 
 
 #home {
   position: relative;
-  min-height: 100svh; 
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 80px; 
   box-sizing: border-box;
-  padding-top: 100px;
 }
 
 @supports not (height: 100svh) {
@@ -1163,7 +1146,7 @@ nav {
 
 @media (max-width: 480px) {
   #home {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .home-buttons {
